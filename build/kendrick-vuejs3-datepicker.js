@@ -1,5 +1,5 @@
 import './DatePickerComponent.css';
-import { defineComponent as q, openBlock as g, createElementBlock as b, normalizeClass as S, createElementVNode as p, ref as U, computed as y, watch as X, resolveComponent as _, createTextVNode as Ce, toDisplayString as v, createCommentVNode as $, createVNode as fe, renderSlot as j, withDirectives as le, normalizeStyle as ye, withModifiers as ae, Fragment as x, renderList as ee, vShow as ge, resolveDirective as Me, withCtx as W, createBlock as me } from "vue";
+import { defineComponent as q, openBlock as g, createElementBlock as b, normalizeClass as S, createElementVNode as p, ref as E, computed as y, watch as X, resolveComponent as _, createTextVNode as Ce, toDisplayString as v, createCommentVNode as $, createVNode as fe, renderSlot as j, withDirectives as le, normalizeStyle as ye, withModifiers as ae, Fragment as x, renderList as ee, vShow as ge, resolveDirective as Me, withCtx as W, createBlock as me } from "vue";
 const Ve = ["click"], te = [], ke = {
   instances: te,
   beforeMount: be,
@@ -236,7 +236,7 @@ const Ye = /* @__PURE__ */ G(Fe, [["render", je]]), f = (e, t = !1) => t ? e.get
   },
   emits: ["show-calendar", "typed-date", "clear-date", "close-calendar"],
   setup(e, { emit: t }) {
-    const s = U(), o = U(null), l = y(() => e.addBootstrapClass ? typeof e.inputClass == "string" ? [e.inputClass, "form-control"].join(" ") : {
+    const s = E(), o = E(null), l = y(() => e.addBootstrapClass ? typeof e.inputClass == "string" ? [e.inputClass, "form-control"].join(" ") : {
       "form-control": !0,
       ...e.inputClass
     } : e.inputClass), m = y(() => {
@@ -298,10 +298,10 @@ const Ye = /* @__PURE__ */ G(Fe, [["render", je]]), f = (e, t = !1) => t ? e.get
     };
   }
 });
-const Re = { key: 0 }, Ue = {
+const Re = { key: 0 }, Ee = {
   key: 1,
   style: { position: "relative" }
-}, Ee = { key: 0 }, Le = ["type", "name", "id", "value", "open-date", "placeholder", "clear-button", "disabled", "required", "readonly"], We = {
+}, Ue = { key: 0 }, Le = ["type", "name", "id", "value", "open-date", "placeholder", "clear-button", "disabled", "required", "readonly"], We = {
   key: 0,
   class: "vuejs3-datepicker__value"
 }, qe = { class: "vuejs3-datepicker__icon" }, Ge = {
@@ -332,8 +332,8 @@ function Ze(e, t, s, o, l, m) {
         ], 2)
       ], 2)
     ], 2)) : $("", !0),
-    e.typeable || !e.hideInput ? (g(), b("div", Ue, [
-      e.inline ? $("", !0) : (g(), b("span", Ee, [
+    e.typeable || !e.hideInput ? (g(), b("div", Ee, [
+      e.inline ? $("", !0) : (g(), b("span", Ue, [
         fe(n, {
           customClass: "vuejs3-datepicker__typeablecalendar",
           color: e.iconColor,
@@ -574,7 +574,7 @@ const Xe = /* @__PURE__ */ G(ze, [["render", Ze], ["__scopeId", "data-v-5491e4cc
     }), D = y(() => {
       const a = e.translation && e.translation.yearSuffix;
       return `${f(e.pageDate)}${a}`;
-    }), w = y(() => (e.translation && e.translation.ymd && e.translation && e.translation.ymd) === !0), E = y(() => e.isRtl ? M() : n()), K = y(() => e.isRtl ? n() : M()), de = y(() => {
+    }), w = y(() => (e.translation && e.translation.ymd && e.translation && e.translation.ymd) === !0), U = y(() => e.isRtl ? M() : n()), K = y(() => e.isRtl ? n() : M()), de = y(() => {
       const a = R(e.selectedDate);
       return e.selectedDate ? ie(a, e.translation && e.translation.daysNames) : null;
     }), Q = y(() => {
@@ -590,7 +590,7 @@ const Xe = /* @__PURE__ */ G(ze, [["render", Ze], ["__scopeId", "data-v-5491e4cc
       days: O,
       currMonthName: d,
       currYearName: D,
-      isLeftNavDisabled: E,
+      isLeftNavDisabled: U,
       isRightNavDisabled: K,
       selectDate: s,
       previousMonth: u,
@@ -642,7 +642,7 @@ function nt(e, t, s, o, l, m) {
         p("span", {
           class: S(["day__month_btn", e.allowedToShowView("month") ? "up" : ""]),
           onClick: t[2] || (t[2] = (...n) => e.showMonthCalendar && e.showMonthCalendar(...n))
-        }, v(e.isYmd ? e.currYearName : e.currMonthName) + " " + v(e.isYmd ? e.currMonthName : e.currYearName), 3),
+        }, v(e.isYmd ? e.currMonthName : e.currYearName + "年") + " " + v(e.isYmd ? e.currYearName + "年" : e.currMonthName), 3),
         p("span", {
           onClick: t[3] || (t[3] = (n) => e.isRtl ? e.previousMonth() : e.nextMonth()),
           class: S(["next", { disabled: e.isRightNavDisabled }])
@@ -760,9 +760,9 @@ const st = /* @__PURE__ */ G(_e, [["render", nt]]), ot = q({
     }
     const k = y(() => {
       const r = e.pageDate, D = [], w = e.useUtc ? new Date(Date.UTC(r.getUTCFullYear(), 0, r.getUTCDate())) : new Date(r.getFullYear(), 0, r.getDate(), r.getHours(), r.getMinutes());
-      for (let E = 0; E < 12; E += 1)
+      for (let U = 0; U < 12; U += 1)
         D.push({
-          month: ne(E, e.translation && e.translation.months),
+          month: ne(U, e.translation && e.translation.months),
           timestamp: w.getTime(),
           isSelected: F(w),
           isDisabled: V(w)
@@ -1645,7 +1645,7 @@ const wt = /* @__PURE__ */ G(mt, [["render", bt]]), Nt = () => {
   kr: Jt(),
   id: Pt(),
   cs: zt()
-}, Ut = q({
+}, Et = q({
   name: "Datepicker",
   components: {
     DateInput: Xe,
@@ -1790,9 +1790,9 @@ const wt = /* @__PURE__ */ G(mt, [["render", bt]]), Nt = () => {
     "selected-disabled"
   ],
   setup(e, { emit: t }) {
-    const s = new Date(e.modelValue), o = U(0), l = U(null);
+    const s = new Date(e.modelValue), o = E(0), l = E(null);
     e.modelValue && Oe(s) && (o.value = s.getTime(), l.value = s), e.openDate && (o.value = re(new Date(e.openDate), 1));
-    const m = U(!1), n = U(!1), u = U(!1), M = U(0), F = U(/* @__PURE__ */ new Date()), V = y(() => e.initialView ? e.initialView : e.minimumView), k = y(() => new Date(o.value)), T = y(() => Rt[e.language]), C = y(() => !!e.inline), J = y(() => ({
+    const m = E(!1), n = E(!1), u = E(!1), M = E(0), F = E(/* @__PURE__ */ new Date()), V = y(() => e.initialView ? e.initialView : e.minimumView), k = y(() => new Date(o.value)), T = y(() => Rt[e.language]), C = y(() => !!e.inline), J = y(() => ({
       position: C.value ? "static" : void 0
     })), P = y(() => m.value || n.value || u.value), H = y(() => T.value && T.value.rtl === !0);
     function A(h) {
@@ -1832,7 +1832,7 @@ const wt = /* @__PURE__ */ G(mt, [["render", bt]]), Nt = () => {
           break;
       }
     }
-    function E() {
+    function U() {
       return e.disabled || C.value ? !1 : P.value ? O(!0) : (w(), !0);
     }
     function K(h) {
@@ -1922,7 +1922,7 @@ const wt = /* @__PURE__ */ G(mt, [["render", bt]]), Nt = () => {
       selectMonth: a,
       selectDisabledDate: ce,
       clearDate: de,
-      showCalendar: E,
+      showCalendar: U,
       close: O,
       allowedToShowView: Y,
       showYearCalendar: D,
@@ -1938,7 +1938,7 @@ const wt = /* @__PURE__ */ G(mt, [["render", bt]]), Nt = () => {
     };
   }
 });
-function Et(e, t, s, o, l, m) {
+function Ut(e, t, s, o, l, m) {
   const n = _("date-input"), u = _("picker-day"), M = _("picker-month"), F = _("picker-year"), V = Me("clickoutside");
   return le((g(), b("div", {
     class: S(["vuejs3-datepicker", [e.isRtl ? "rtl" : "", `vuejs3-${e.theme}`, e.wrapperClass]])
@@ -2077,7 +2077,7 @@ function Et(e, t, s, o, l, m) {
     }]
   ]);
 }
-const Wt = /* @__PURE__ */ G(Ut, [["render", Et]]);
+const Wt = /* @__PURE__ */ G(Et, [["render", Ut]]);
 export {
   Wt as default
 };
