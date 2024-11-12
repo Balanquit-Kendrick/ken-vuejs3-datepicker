@@ -19,7 +19,7 @@
         <span @click="isRtl ? nextDecade() : previousDecade()" class="prev" :class="{ disabled: isLeftNavDisabled }"
           >&lt;</span
         >
-        <span>{{ getPageDecade }}</span>
+        <span>{{ getPageDecade+'年' }}</span>
         <span @click="isRtl ? previousDecade() : nextDecade()" class="next" :class="{ disabled: isRightNavDisabled }"
           >&gt;</span
         >

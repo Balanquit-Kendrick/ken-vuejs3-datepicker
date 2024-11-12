@@ -20,7 +20,7 @@
           >&lt;</span
         >
         <span class="month__year_btn" @click="showYearCalendar" :class="allowedToShowView('year') ? 'up' : ''">{{
-          pageYearName
+          pageYearName+'年'
         }}</span>
         <span @click="isRtl ? previousYear() : nextYear()" class="next" :class="{ disabled: isRightNavDisabled }"
           >&gt;</span
