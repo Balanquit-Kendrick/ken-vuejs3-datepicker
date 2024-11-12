@@ -20,7 +20,7 @@
           >&lt;</span
         >
         <span class="day__month_btn" @click="showMonthCalendar" :class="allowedToShowView('month') ? 'up' : ''"
-          >{{ isYmd ? currYearName : currMonthName }} {{ isYmd ? currMonthName : currYearName }}</span
+          > {{ isYmd ? currMonthName : currYearName+'年' }} {{ isYmd ? currYearName+'年' : currMonthName }}</span
         >
         <span @click="isRtl ? previousMonth() : nextMonth()" class="next" :class="{ disabled: isRightNavDisabled }"
           >&gt;</span
