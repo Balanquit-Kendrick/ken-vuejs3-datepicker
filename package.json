@@ -1,6 +1,6 @@
 {
   "name": "kendrick-vuejs3-datepicker",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Kendrick Vue 3 datepicker",
   "files": [
     "build/*"
