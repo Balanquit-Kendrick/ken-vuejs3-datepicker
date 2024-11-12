@@ -1,17 +1,17 @@
 {
-  "name": "ken-vuejs3-datepicker",
+  "name": "kendrick-vuejs3-datepicker",
   "version": "1.0.0",
-  "description": "Ken Vue 3 datepicker",
+  "description": "Kendrick Vue 3 datepicker",
   "files": [
     "build/*"
   ],
   "type": "module",
-  "module": "./build/ken-vuejs3-datepicker.js",
-  "main": "./build/ken-vuejs3-datepicker.umd.cjs",
+  "module": "./build/kendrick-vuejs3-datepicker.js",
+  "main": "./build/kendrick-vuejs3-datepicker.umd.cjs",
   "exports": {
     ".": {
-      "import": "./build/ken-vuejs3-datepicker.js",
-      "require": "./build/ken-vuejs3-datepicker.umd.cjs"
+      "import": "./build/kendrick-vuejs3-datepicker.js",
+      "require": "./build/kendrick-vuejs3-datepicker.umd.cjs"
     }
   },
   "scripts": {
